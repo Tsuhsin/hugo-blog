@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Parsa | 梓歆的部落格</title>
+    <link>https://azusa-hugo-blog.web.app/categories/</link>
+    <description>Recent content in Categories on Parsa | 梓歆的部落格</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Fri, 19 Jul 2019 17:10:53 +0800</lastBuildDate>
+    
+	<atom:link href="https://azusa-hugo-blog.web.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Food</title>
+      <link>https://azusa-hugo-blog.web.app/categories/food/</link>
+      <pubDate>Fri, 19 Jul 2019 17:10:53 +0800</pubDate>
+      
+      <guid>https://azusa-hugo-blog.web.app/categories/food/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Article</title>
+      <link>https://azusa-hugo-blog.web.app/categories/article/</link>
+      <pubDate>Tue, 14 May 2019 14:46:10 +0600</pubDate>
+      
+      <guid>https://azusa-hugo-blog.web.app/categories/article/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fashion</title>
+      <link>https://azusa-hugo-blog.web.app/categories/fashion/</link>
+      <pubDate>Tue, 14 May 2019 14:46:10 +0600</pubDate>
+      
+      <guid>https://azusa-hugo-blog.web.app/categories/fashion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nature</title>
+      <link>https://azusa-hugo-blog.web.app/categories/nature/</link>
+      <pubDate>Tue, 14 May 2019 14:46:10 +0600</pubDate>
+      
+      <guid>https://azusa-hugo-blog.web.app/categories/nature/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Philosophy</title>
+      <link>https://azusa-hugo-blog.web.app/categories/philosophy/</link>
+      <pubDate>Tue, 14 May 2019 14:46:10 +0600</pubDate>
+      
+      <guid>https://azusa-hugo-blog.web.app/categories/philosophy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Valuable Idea</title>
+      <link>https://azusa-hugo-blog.web.app/categories/valuable-idea/</link>
+      <pubDate>Tue, 14 May 2019 14:46:10 +0600</pubDate>
+      
+      <guid>https://azusa-hugo-blog.web.app/categories/valuable-idea/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
