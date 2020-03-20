@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://azusa-hugo-blog.web.app/fr/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://azusa-hugo-blog.web.app/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://azusa-hugo-blog.web.app/fr/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://azusa-hugo-blog.web.app/fr/posts/1/01/posts/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://azusa-hugo-blog.web.app/posts/1/01/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://azusa-hugo-blog.web.app/fr/posts/1/01/posts/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://azusa-hugo-blog.web.app/fr/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://azusa-hugo-blog.web.app/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://azusa-hugo-blog.web.app/fr/tags/"
+                />
+  </url>
+  
+</urlset>

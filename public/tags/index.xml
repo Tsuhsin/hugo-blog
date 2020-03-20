@@ -1,96 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Parsa | 梓歆的部落格</title>
+    <title>Tags on Hello Friend NG | 梓歆的部落格</title>
     <link>https://azusa-hugo-blog.web.app/tags/</link>
-    <description>Recent content in Tags on Parsa | 梓歆的部落格</description>
+    <description>Recent content in Tags on Hello Friend NG | 梓歆的部落格</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-tw</language>
-    <lastBuildDate>Fri, 19 Jul 2019 17:10:53 +0800</lastBuildDate>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     
 	<atom:link href="https://azusa-hugo-blog.web.app/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>hugo</title>
-      <link>https://azusa-hugo-blog.web.app/tags/hugo/</link>
-      <pubDate>Fri, 19 Jul 2019 17:10:53 +0800</pubDate>
-      
-      <guid>https://azusa-hugo-blog.web.app/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>架站</title>
-      <link>https://azusa-hugo-blog.web.app/tags/%E6%9E%B6%E7%AB%99/</link>
-      <pubDate>Fri, 19 Jul 2019 17:10:53 +0800</pubDate>
-      
-      <guid>https://azusa-hugo-blog.web.app/tags/%E6%9E%B6%E7%AB%99/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Article</title>
-      <link>https://azusa-hugo-blog.web.app/tags/article/</link>
-      <pubDate>Tue, 14 May 2019 14:46:10 +0600</pubDate>
-      
-      <guid>https://azusa-hugo-blog.web.app/tags/article/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Fashion</title>
-      <link>https://azusa-hugo-blog.web.app/tags/fashion/</link>
-      <pubDate>Tue, 14 May 2019 14:46:10 +0600</pubDate>
-      
-      <guid>https://azusa-hugo-blog.web.app/tags/fashion/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Finance</title>
-      <link>https://azusa-hugo-blog.web.app/tags/finance/</link>
-      <pubDate>Tue, 14 May 2019 14:46:10 +0600</pubDate>
-      
-      <guid>https://azusa-hugo-blog.web.app/tags/finance/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Food</title>
-      <link>https://azusa-hugo-blog.web.app/tags/food/</link>
-      <pubDate>Tue, 14 May 2019 14:46:10 +0600</pubDate>
-      
-      <guid>https://azusa-hugo-blog.web.app/tags/food/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nature</title>
-      <link>https://azusa-hugo-blog.web.app/tags/nature/</link>
-      <pubDate>Tue, 14 May 2019 14:46:10 +0600</pubDate>
-      
-      <guid>https://azusa-hugo-blog.web.app/tags/nature/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Philosophy</title>
-      <link>https://azusa-hugo-blog.web.app/tags/philosophy/</link>
-      <pubDate>Tue, 14 May 2019 14:46:10 +0600</pubDate>
-      
-      <guid>https://azusa-hugo-blog.web.app/tags/philosophy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Photos</title>
-      <link>https://azusa-hugo-blog.web.app/tags/photos/</link>
-      <pubDate>Tue, 14 May 2019 14:46:10 +0600</pubDate>
-      
-      <guid>https://azusa-hugo-blog.web.app/tags/photos/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>

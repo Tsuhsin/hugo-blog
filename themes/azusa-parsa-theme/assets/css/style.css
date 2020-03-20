@@ -10,6 +10,7 @@ VERSION:	Versoin Number
 /*  typography */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display:400,700");
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC:300,400,500,600,700&display=swap&subset=chinese-traditional');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 @font-face {
   font-family: 'hanskendrick';
   src: url("../fonts/hanskendrick-regular-webfont.woff") format("woff");
@@ -19,7 +20,7 @@ VERSION:	Versoin Number
 
 body {
   line-height: 1.5;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
   color: #585757;
