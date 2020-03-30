@@ -23,10 +23,164 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Mon, 16 Mar 2020 15:28:37 +0800</lastBuildDate>
+        <lastBuildDate>Mon, 30 Mar 2020 16:32:21 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="tsuhsin.netlify.com/rss.xml" />
         
+        
+            <item>
+                <title>Syntax Highlighting</title>
+                <link>tsuhsin.netlify.com/posts/syntax-highlighting/</link>
+                <guid isPermaLink="true">tsuhsin.netlify.com/posts/syntax-highlighting/</guid>
+                <pubDate>Tue, 17 Mar 2020 11:11:16 +0800</pubDate>
+                
+                    <author>tsuhsin860509@gmail.com (tsuhsin)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description><![CDATA[<p>Syntax Highlighting 測試</p>
+
+<pre><code>package main
+
+import (
+    &quot;fmt&quot;
+    &quot;math/rand&quot;
+    &quot;time&quot;
+)
+
+type Moo struct {
+    Cow   int
+    Sound string
+    Tube  chan bool
+}
+
+// A cow will moo until it is being milked
+func cow(num int, mootube chan Moo) {
+    tube := make(chan bool)
+    for {
+        select {
+        case mootube &lt;- Moo{num, &quot;moo&quot;, tube}:
+            fmt.Println(&quot;Cow number&quot;, num, &quot;mooed through the mootube&quot;)
+            &lt;-tube
+            fmt.Println(&quot;Cow number&quot;, num, &quot;is being milked and stops mooing&quot;)
+            mootube &lt;- Moo{num, &quot;mooh&quot;, nil}
+            fmt.Println(&quot;Cow number&quot;, num, &quot;moos one last time in relief&quot;)
+            return
+        default:
+            fmt.Println(&quot;Cow number&quot;, num, &quot;mooed through the mootube and was ignored&quot;)
+            time.Sleep(time.Duration(rand.Int31n(1000)) * time.Millisecond)
+        }
+    }
+}
+
+// The farmer wants to turn on all the milktubes to stop the mooing
+func farmer(numcows int, mootube chan Moo, farmertube chan string) {
+    fmt.Println(&quot;Farmer starts listening to the mootube&quot;)
+    for unrelievedCows := numcows; unrelievedCows &gt; 0; {
+        moo := &lt;-mootube
+        if moo.Sound == &quot;mooh&quot; {
+            fmt.Println(&quot;Farmer heard a moo of relief from cow number&quot;, moo.Cow)
+            unrelievedCows--
+        } else {
+            fmt.Println(&quot;Farmer heard a&quot;, moo.Sound, &quot;from cow number&quot;, moo.Cow)
+            time.Sleep(2e9)
+            fmt.Println(&quot;Farmer starts the milking machine on cow number&quot;, moo.Cow)
+            moo.Tube &lt;- true
+        }
+    }
+    fmt.Println(&quot;Farmer doesn't hear a single moo anymore. All done!&quot;)
+    farmertube &lt;- &quot;yey!&quot;
+}
+
+// The farm starts out with mooing cows that wants to be milked
+func runFarm(numcows int) {
+    farmertube := make(chan string)
+    mootube := make(chan Moo)
+    for cownum := 0; cownum &lt; numcows; cownum++ {
+        go cow(cownum, mootube)
+    }
+    go farmer(numcows, mootube, farmertube)
+    farmerSaid := &lt;-farmertube
+    if farmerSaid == &quot;yey!&quot; {
+        fmt.Println(&quot;All cows are happy.&quot;)
+    }
+}
+
+func main() {
+    runFarm(4)
+    fmt.Println(&quot;done&quot;)
+}
+</code></pre>
+]]></description>
+                
+                
+                
+                    
+                    
+                    
+                        
+                        
+                        
+                            
+                                <category domain="tsuhsin.netlify.com/posts/">posts</category>
+                            
+                        
+                    
+                
+                
+                
+                    
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="tsuhsin.netlify.com/tags/syntax-highlighting/">Syntax Highlighting</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>Hello World</title>
+                <link>tsuhsin.netlify.com/posts/hello-world/</link>
+                <guid isPermaLink="true">tsuhsin.netlify.com/posts/hello-world/</guid>
+                <pubDate>Mon, 16 Mar 2020 15:25:05 +0800</pubDate>
+                
+                    <author>tsuhsin860509@gmail.com (tsuhsin)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description><![CDATA[<p>使用Meme作為主題測試～～</p>
+]]></description>
+                
+                
+                
+                    
+                    
+                    
+                        
+                        
+                        
+                            
+                                <category domain="tsuhsin.netlify.com/posts/">posts</category>
+                            
+                        
+                    
+                
+                
+                
+                    
+                        
+                    
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>測試文章</title>
@@ -52,17 +206,21 @@
                 
                 
                 
+                    
+                    
+                    
+                        
+                        
+                        
+                            
+                                <category domain="tsuhsin.netlify.com/posts/">posts</category>
+                            
+                        
+                    
+                
                 
                 
                     
-                        
-                            
-                                
-                                
-                                
-                                    <category domain="tsuhsin.netlify.com/categories/food/">Food</category>
-                                
-                            
                         
                     
                         

@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-TW">
     <title type="text">Tsuhsin</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2020-03-16T15:28:37+08:00</updated>
+    <updated>2020-03-30T16:32:21+08:00</updated>
     <id>tsuhsin.netlify.com/</id>
     <link rel="alternate" type="text/html" href="tsuhsin.netlify.com/" />
     <link rel="self" type="application/atom+xml" href="tsuhsin.netlify.com/atom.xml" />
@@ -17,10 +17,172 @@
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
     <generator uri="https://gohugo.io/" version="0.58.3">Hugo</generator>
         <entry>
+            <title type="text">Syntax Highlighting</title>
+            <link rel="alternate" type="text/html" href="tsuhsin.netlify.com/posts/syntax-highlighting/" />
+            <id>tsuhsin.netlify.com/posts/syntax-highlighting/</id>
+            <updated>2020-03-18T14:22:51+08:00</updated>
+            <published>2020-03-17T11:11:16+08:00</published>
+            <author>
+                    <name>tsuhsin</name>
+                    <uri>https://tsuhsin.netlify.com</uri>
+                    <email>tsuhsin860509@gmail.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
+    
+    <summary type="html"><![CDATA[Syntax Highlighting 測試 package main import ( &quot;fmt&quot; &quot;math/rand&quot; &quot;time&quot; ) type Moo struct { Cow int Sound string Tube chan bool } // A cow will moo until it is being milked func cow(num int, mootube chan Moo) { tube……]]></summary>
+            
+                <content type="html"><![CDATA[<p>Syntax Highlighting 測試</p>
+
+<pre><code>package main
+
+import (
+    &quot;fmt&quot;
+    &quot;math/rand&quot;
+    &quot;time&quot;
+)
+
+type Moo struct {
+    Cow   int
+    Sound string
+    Tube  chan bool
+}
+
+// A cow will moo until it is being milked
+func cow(num int, mootube chan Moo) {
+    tube := make(chan bool)
+    for {
+        select {
+        case mootube &lt;- Moo{num, &quot;moo&quot;, tube}:
+            fmt.Println(&quot;Cow number&quot;, num, &quot;mooed through the mootube&quot;)
+            &lt;-tube
+            fmt.Println(&quot;Cow number&quot;, num, &quot;is being milked and stops mooing&quot;)
+            mootube &lt;- Moo{num, &quot;mooh&quot;, nil}
+            fmt.Println(&quot;Cow number&quot;, num, &quot;moos one last time in relief&quot;)
+            return
+        default:
+            fmt.Println(&quot;Cow number&quot;, num, &quot;mooed through the mootube and was ignored&quot;)
+            time.Sleep(time.Duration(rand.Int31n(1000)) * time.Millisecond)
+        }
+    }
+}
+
+// The farmer wants to turn on all the milktubes to stop the mooing
+func farmer(numcows int, mootube chan Moo, farmertube chan string) {
+    fmt.Println(&quot;Farmer starts listening to the mootube&quot;)
+    for unrelievedCows := numcows; unrelievedCows &gt; 0; {
+        moo := &lt;-mootube
+        if moo.Sound == &quot;mooh&quot; {
+            fmt.Println(&quot;Farmer heard a moo of relief from cow number&quot;, moo.Cow)
+            unrelievedCows--
+        } else {
+            fmt.Println(&quot;Farmer heard a&quot;, moo.Sound, &quot;from cow number&quot;, moo.Cow)
+            time.Sleep(2e9)
+            fmt.Println(&quot;Farmer starts the milking machine on cow number&quot;, moo.Cow)
+            moo.Tube &lt;- true
+        }
+    }
+    fmt.Println(&quot;Farmer doesn't hear a single moo anymore. All done!&quot;)
+    farmertube &lt;- &quot;yey!&quot;
+}
+
+// The farm starts out with mooing cows that wants to be milked
+func runFarm(numcows int) {
+    farmertube := make(chan string)
+    mootube := make(chan Moo)
+    for cownum := 0; cownum &lt; numcows; cownum++ {
+        go cow(cownum, mootube)
+    }
+    go farmer(numcows, mootube, farmertube)
+    farmerSaid := &lt;-farmertube
+    if farmerSaid == &quot;yey!&quot; {
+        fmt.Println(&quot;All cows are happy.&quot;)
+    }
+}
+
+func main() {
+    runFarm(4)
+    fmt.Println(&quot;done&quot;)
+}
+</code></pre>
+]]></content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                        
+                            <category scheme="tsuhsin.netlify.com/posts/" term="posts" label="posts" />
+                        
+                    
+                
+            
+            
+            
+                
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="tsuhsin.netlify.com/tags/syntax-highlighting/" term="Syntax Highlighting" label="Syntax Highlighting" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">Hello World</title>
+            <link rel="alternate" type="text/html" href="tsuhsin.netlify.com/posts/hello-world/" />
+            <id>tsuhsin.netlify.com/posts/hello-world/</id>
+            <updated>2020-03-18T14:22:47+08:00</updated>
+            <published>2020-03-16T15:25:05+08:00</published>
+            <author>
+                    <name>tsuhsin</name>
+                    <uri>https://tsuhsin.netlify.com</uri>
+                    <email>tsuhsin860509@gmail.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html"><![CDATA[使用Meme作為主題測試～～]]></summary>
+            
+                <content type="html"><![CDATA[<p>使用Meme作為主題測試～～</p>
+]]></content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                        
+                            <category scheme="tsuhsin.netlify.com/posts/" term="posts" label="posts" />
+                        
+                    
+                
+            
+            
+            
+                
+                    
+                
+                    
+                
+            
+        </entry>
+    
+        <entry>
             <title type="text">測試文章</title>
             <link rel="alternate" type="text/html" href="tsuhsin.netlify.com/posts/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0/" />
             <id>tsuhsin.netlify.com/posts/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0/</id>
-            <updated>2019-10-30T15:53:12+08:00</updated>
+            <updated>2020-03-18T14:22:43+08:00</updated>
             <published>2019-07-19T17:10:53+08:00</published>
             <author>
                     <name>tsuhsin</name>
@@ -45,17 +207,21 @@
             
             
             
+                
+                
+                
+                    
+                    
+                    
+                        
+                            <category scheme="tsuhsin.netlify.com/posts/" term="posts" label="posts" />
+                        
+                    
+                
+            
             
             
                 
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="tsuhsin.netlify.com/categories/food/" term="Food" label="Food" />
-                            
-                        
                     
                 
                     
