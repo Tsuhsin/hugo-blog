@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-TW">
     <title type="text">Tsuhsin</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2020-03-30T16:32:21+08:00</updated>
+    <updated>2020-10-07T14:33:48+08:00</updated>
     <id>tsuhsin.netlify.com/</id>
     <link rel="alternate" type="text/html" href="tsuhsin.netlify.com/" />
     <link rel="self" type="application/atom+xml" href="tsuhsin.netlify.com/atom.xml" />
@@ -17,11 +17,98 @@
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
     <generator uri="https://gohugo.io/" version="0.58.3">Hugo</generator>
         <entry>
+            <title type="text">使用Hugo架設網站</title>
+            <link rel="alternate" type="text/html" href="tsuhsin.netlify.com/posts/%E4%BD%BF%E7%94%A8hugo%E6%9E%B6%E8%A8%AD%E7%B6%B2%E7%AB%99/" />
+            <id>tsuhsin.netlify.com/posts/%E4%BD%BF%E7%94%A8hugo%E6%9E%B6%E8%A8%AD%E7%B6%B2%E7%AB%99/</id>
+            <updated>2020-09-30T22:34:05+08:00</updated>
+            <published>2019-07-19T17:10:53+08:00</published>
+            <author>
+                    <name>tsuhsin</name>
+                    <uri>https://tsuhsin.netlify.com</uri>
+                    <email>tsuhsin860509@gmail.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
+    
+    <summary type="html"><![CDATA[哈囉！這是由hugo所產生的網頁～～ 目錄結構 . ├── content # 存放編譯後的可執行檔案 │ └─……]]></summary>
+            
+                <content type="html"><![CDATA[
+
+<p>哈囉！這是由hugo所產生的網頁～～</p>
+
+<h2 id="目錄結構">目錄結構</h2>
+
+<pre><code>.
+├── content                # 存放編譯後的可執行檔案
+│   └── post               # 文章位置
+├── public                 # 編譯後的資料
+├── static                 # 放置 images css 等靜態檔
+└── themes                 # 版型存放位置
+│   └── theme-name
+│       ├── exampleSite    # 初始化用，可複製此資料夾至專案根目錄
+│       └── layouts        # theme 模板檔 👈 可客製化的地方
+└── config.toml            # 主要的 config 檔
+</code></pre>
+
+<h2 id="安裝">安裝</h2>
+
+<pre><code>brew install hugo
+</code></pre>
+
+<h2 id="build">build</h2>
+
+<pre><code>hugo
+</code></pre>
+
+<h2 id="local-serve-live-reload">Local serve (Live Reload)</h2>
+
+<pre><code>hugo server
+</code></pre>
+]]></content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                        
+                            <category scheme="tsuhsin.netlify.com/posts/" term="posts" label="posts" />
+                        
+                    
+                
+            
+            
+            
+                
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="tsuhsin.netlify.com/tags/hugo/" term="hugo" label="hugo" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="tsuhsin.netlify.com/tags/%E6%9E%B6%E7%AB%99/" term="架站" label="架站" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
             <title type="text">Syntax Highlighting</title>
             <link rel="alternate" type="text/html" href="tsuhsin.netlify.com/posts/syntax-highlighting/" />
             <id>tsuhsin.netlify.com/posts/syntax-highlighting/</id>
-            <updated>2020-03-18T14:22:51+08:00</updated>
-            <published>2020-03-17T11:11:16+08:00</published>
+            <updated>2020-09-29T18:34:40+08:00</updated>
+            <published>2019-03-17T11:11:16+08:00</published>
             <author>
                     <name>tsuhsin</name>
                     <uri>https://tsuhsin.netlify.com</uri>
@@ -131,111 +218,6 @@ func main() {
                             
                             
                                 <category scheme="tsuhsin.netlify.com/tags/syntax-highlighting/" term="Syntax Highlighting" label="Syntax Highlighting" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        <entry>
-            <title type="text">Hello World</title>
-            <link rel="alternate" type="text/html" href="tsuhsin.netlify.com/posts/hello-world/" />
-            <id>tsuhsin.netlify.com/posts/hello-world/</id>
-            <updated>2020-03-18T14:22:47+08:00</updated>
-            <published>2020-03-16T15:25:05+08:00</published>
-            <author>
-                    <name>tsuhsin</name>
-                    <uri>https://tsuhsin.netlify.com</uri>
-                    <email>tsuhsin860509@gmail.com</email>
-                    </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html"><![CDATA[使用Meme作為主題測試～～]]></summary>
-            
-                <content type="html"><![CDATA[<p>使用Meme作為主題測試～～</p>
-]]></content>
-            
-            
-            
-                
-                
-                
-                    
-                    
-                    
-                        
-                            <category scheme="tsuhsin.netlify.com/posts/" term="posts" label="posts" />
-                        
-                    
-                
-            
-            
-            
-                
-                    
-                
-                    
-                
-            
-        </entry>
-    
-        <entry>
-            <title type="text">測試文章</title>
-            <link rel="alternate" type="text/html" href="tsuhsin.netlify.com/posts/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0/" />
-            <id>tsuhsin.netlify.com/posts/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0/</id>
-            <updated>2020-03-18T14:22:43+08:00</updated>
-            <published>2019-07-19T17:10:53+08:00</published>
-            <author>
-                    <name>tsuhsin</name>
-                    <uri>https://tsuhsin.netlify.com</uri>
-                    <email>tsuhsin860509@gmail.com</email>
-                    </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
-    
-    <summary type="html"><![CDATA[哈囉！這是由hugo所產生的網頁～～ 這裡有很多內容 這裡有很多內容 這裡有很多內容 這裡有……]]></summary>
-            
-                <content type="html"><![CDATA[<p>哈囉！這是由hugo所產生的網頁～～</p>
-
-<p>這裡有很多內容
-這裡有很多內容
-這裡有很多內容
-這裡有很多內容
-這裡有很多內容
-這裡有很多內容</p>
-
-<p>這裡有很多內容這裡有很多內容</p>
-]]></content>
-            
-            
-            
-                
-                
-                
-                    
-                    
-                    
-                        
-                            <category scheme="tsuhsin.netlify.com/posts/" term="posts" label="posts" />
-                        
-                    
-                
-            
-            
-            
-                
-                    
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="tsuhsin.netlify.com/tags/hugo/" term="hugo" label="hugo" />
-                            
-                        
-                            
-                            
-                            
-                                <category scheme="tsuhsin.netlify.com/tags/%E6%9E%B6%E7%AB%99/" term="架站" label="架站" />
                             
                         
                     
