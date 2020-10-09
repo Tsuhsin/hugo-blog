@@ -3,43 +3,53 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>tsuhsin.netlify.com/tags/hugo/</loc>
-    <lastmod>2020-09-30T22:34:05+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>tsuhsin.netlify.com/posts/</loc>
-    <lastmod>2020-09-30T22:34:05+08:00</lastmod>
+    <lastmod>2020-10-07T15:33:41+08:00</lastmod>
   </url>
   
   <url>
     <loc>tsuhsin.netlify.com/tags/</loc>
-    <lastmod>2020-09-30T22:34:05+08:00</lastmod>
+    <lastmod>2020-10-07T15:33:41+08:00</lastmod>
   </url>
   
   <url>
     <loc>tsuhsin.netlify.com/</loc>
-    <lastmod>2020-09-30T22:34:05+08:00</lastmod>
+    <lastmod>2020-10-07T15:33:41+08:00</lastmod>
   </url>
   
   <url>
-    <loc>tsuhsin.netlify.com/posts/%E4%BD%BF%E7%94%A8hugo%E6%9E%B6%E8%A8%AD%E7%B6%B2%E7%AB%99/</loc>
-    <lastmod>2020-09-30T22:34:05+08:00</lastmod>
+    <loc>tsuhsin.netlify.com/tags/z-shell/</loc>
+    <lastmod>2020-10-07T14:43:15+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>tsuhsin.netlify.com/posts/zsh_theme/</loc>
+    <lastmod>2020-10-07T14:43:15+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>tsuhsin.netlify.com/posts/zsh_syntax/</loc>
+    <lastmod>2020-10-07T14:41:43+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>tsuhsin.netlify.com/posts/zsh/</loc>
+    <lastmod>2020-10-07T14:41:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>tsuhsin.netlify.com/tags/hugo/</loc>
+    <lastmod>2020-10-07T15:33:41+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>tsuhsin.netlify.com/posts/hugo/</loc>
+    <lastmod>2020-10-07T15:33:41+08:00</lastmod>
   </url>
   
   <url>
     <loc>tsuhsin.netlify.com/tags/%E6%9E%B6%E7%AB%99/</loc>
-    <lastmod>2020-09-30T22:34:05+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>tsuhsin.netlify.com/tags/syntax-highlighting/</loc>
-    <lastmod>2020-09-29T18:34:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>tsuhsin.netlify.com/posts/syntax-highlighting/</loc>
-    <lastmod>2020-09-29T18:34:40+08:00</lastmod>
+    <lastmod>2020-10-07T15:33:41+08:00</lastmod>
   </url>
   
   <url>

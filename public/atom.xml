@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-TW">
     <title type="text">Tsuhsin</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2020-10-07T14:33:48+08:00</updated>
+    <updated>2020-10-09T16:02:57+08:00</updated>
     <id>tsuhsin.netlify.com/</id>
     <link rel="alternate" type="text/html" href="tsuhsin.netlify.com/" />
     <link rel="self" type="application/atom+xml" href="tsuhsin.netlify.com/atom.xml" />
@@ -17,10 +17,261 @@
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
     <generator uri="https://gohugo.io/" version="0.58.3">Hugo</generator>
         <entry>
+            <title type="text">z-shell 設定主題</title>
+            <link rel="alternate" type="text/html" href="tsuhsin.netlify.com/posts/zsh_theme/" />
+            <id>tsuhsin.netlify.com/posts/zsh_theme/</id>
+            <updated>2020-10-07T14:43:15+08:00</updated>
+            <published>2020-10-03T14:40:58+08:00</published>
+            <author>
+                    <name>tsuhsin</name>
+                    <uri>https://tsuhsin.netlify.com</uri>
+                    <email>tsuhsin860509@gmail.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
+    
+    <summary type="html"><![CDATA[修改 .zshrc 切資料夾至Home cd ~ 列出所有資料(包含隱藏檔) ls -la 會看到名稱為 .zshrc 的檔案 修改此……]]></summary>
+            
+                <content type="html"><![CDATA[
+
+<h3 id="修改-zshrc">修改 <code>.zshrc</code></h3>
+
+<ol>
+<li>切資料夾至Home <code>cd ~</code></li>
+<li>列出所有資料(包含隱藏檔) <code>ls -la</code> 會看到名稱為 <code>.zshrc</code> 的檔案</li>
+<li>修改此檔案 <code>vim .zshrc</code></li>
+<li>進到vim之後會看到<code>ZSH_THEME=&quot;bira&quot;</code> 這句，代表現在套用的主題為<code>bira</code>，修改引號內的內容即可更換主題</li>
+</ol>
+
+<h3 id="有哪些主題">有哪些主題</h3>
+
+<p><code>cd ~/.oh-my-zsh/themes</code>可以看有哪些主題，<a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Themes">這裡</a>可以看主題長什麼樣子</p>
+
+<h3 id="agnoster主題">agnoster主題</h3>
+
+<p>如果換了agnoster主題會需要<a href="https://github.com/powerline/fonts">下載字型</a>，否則會有亂碼出現，如下圖
+<img src="https://i.imgur.com/KMAEGPC.png" alt="" /></p>
+
+<h4 id="下載字型">下載字型</h4>
+
+<p>將字型clone至Home</p>
+
+<pre><code>git clone https://github.com/powerline/fonts.git
+sudo ./fonts/install.sh
+</code></pre>
+
+<h4 id="設定字型">設定字型</h4>
+
+<p>以 iTerm2 為例：</p>
+
+<p>iTerm2 &gt; Preference &gt; Profiles &gt; Text &gt; Change Font <br>
+將字型改成 <code>Meslo LG M DZ for Powerline</code>
+<img src="https://i.imgur.com/kk87Aue.png" alt="" />
+<img src="https://i.imgur.com/sTJ70cr.png" alt="" /></p>
+
+<h3 id="修改完成">修改完成</h3>
+
+<p>(左: <code>bira</code> ; 右: <code>agnoster</code> )
+<img src="https://i.imgur.com/CbvB96R.png" alt="" /></p>
+]]></content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                        
+                            <category scheme="tsuhsin.netlify.com/posts/" term="posts" label="posts" />
+                        
+                    
+                
+            
+            
+            
+                
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="tsuhsin.netlify.com/tags/z-shell/" term="z-shell" label="z-shell" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">z-shell 中 Syntax Highlighting 設定</title>
+            <link rel="alternate" type="text/html" href="tsuhsin.netlify.com/posts/zsh_syntax/" />
+            <id>tsuhsin.netlify.com/posts/zsh_syntax/</id>
+            <updated>2020-10-07T14:41:43+08:00</updated>
+            <published>2019-10-07T14:29:23+08:00</published>
+            <author>
+                    <name>tsuhsin</name>
+                    <uri>https://tsuhsin.netlify.com</uri>
+                    <email>tsuhsin860509@gmail.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
+    
+    <summary type="html"><![CDATA[下載 zsh-syntax-highlighting brew install zsh-syntax-highlighting 設定 進vim修改.zshrc，加上以下內容： typeset -gA ZSH_HIGHLIGHT_STYLES # 防止開新視窗styl……]]></summary>
+            
+                <content type="html"><![CDATA[
+
+<h3 id="下載-zsh-syntax-highlighting">下載 zsh-syntax-highlighting</h3>
+
+<pre><code>brew install zsh-syntax-highlighting
+</code></pre>
+
+<h3 id="設定">設定</h3>
+
+<p>進vim修改<code>.zshrc</code>，加上以下內容：</p>
+
+<pre><code>typeset -gA ZSH_HIGHLIGHT_STYLES
+# 防止開新視窗style失效(可能跟globle array有相關)
+ZSH_HIGHLIGHT_STYLES[alias]=fg=050,bold
+ZSH_HIGHLIGHT_STYLES[builtin]=fg=050,bold
+ZSH_HIGHLIGHT_STYLES[function]=fg=050,bold
+ZSH_HIGHLIGHT_STYLES[command]=fg=050,bold
+</code></pre>
+
+<p>其中<code>fg=050</code>這個數字是256色碼，更改可以換顏色
+&gt; <a href="https://upload.wikimedia.org/wikipedia/commons/1/15/Xterm_256color_chart.svg">色碼表</a></p>
+
+<h3 id="套用">套用</h3>
+
+<p>使用 <code>souce .zshrc</code> 套用
+若沒有改變則：
+在 .zshrc 檔中最底下將上這一段來套用：</p>
+
+<pre><code># For zsh syntax-highlighting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+</code></pre>
+]]></content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                        
+                            <category scheme="tsuhsin.netlify.com/posts/" term="posts" label="posts" />
+                        
+                    
+                
+            
+            
+            
+                
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="tsuhsin.netlify.com/tags/z-shell/" term="z-shell" label="z-shell" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">安裝 z-shell</title>
+            <link rel="alternate" type="text/html" href="tsuhsin.netlify.com/posts/zsh/" />
+            <id>tsuhsin.netlify.com/posts/zsh/</id>
+            <updated>2020-10-07T14:41:40+08:00</updated>
+            <published>2019-10-01T14:38:44+08:00</published>
+            <author>
+                    <name>tsuhsin</name>
+                    <uri>https://tsuhsin.netlify.com</uri>
+                    <email>tsuhsin860509@gmail.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
+    
+    <summary type="html"><![CDATA[安裝 z-shell 如果沒有brew的話要先安裝 brew 安裝 brew ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot; 安裝 zsh brew install zsh 安裝 oh-my-zsh sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot; zsh 的……]]></summary>
+            
+                <content type="html"><![CDATA[
+
+<h1 id="安裝-z-shell">安裝 z-shell</h1>
+
+<p>如果沒有brew的話要先安裝 <code>brew</code></p>
+
+<p>安裝 <code>brew</code></p>
+
+<pre><code>ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+</code></pre>
+
+<p>安裝 <code>zsh</code></p>
+
+<pre><code>brew install zsh
+</code></pre>
+
+<p>安裝 <code>oh-my-zsh</code></p>
+
+<pre><code>sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
+</code></pre>
+
+<blockquote>
+<p>zsh 的設定檔放在<code>~/.zshrc</code>，這個檔案需要我們自己產生由於我們用<code>oh-my-zsh</code>，所以這邊建議使用 <code>oh-my-zsh</code> 預設的 templete 比較省事</p>
+</blockquote>
+
+<pre><code>cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+</code></pre>
+
+<p>修改預設的 shell 為 <code>zsh</code></p>
+
+<pre><code>chsh -s /usr/local/bin/zsh
+</code></pre>
+]]></content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                        
+                            <category scheme="tsuhsin.netlify.com/posts/" term="posts" label="posts" />
+                        
+                    
+                
+            
+            
+            
+                
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="tsuhsin.netlify.com/tags/z-shell/" term="z-shell" label="z-shell" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
             <title type="text">使用Hugo架設網站</title>
-            <link rel="alternate" type="text/html" href="tsuhsin.netlify.com/posts/%E4%BD%BF%E7%94%A8hugo%E6%9E%B6%E8%A8%AD%E7%B6%B2%E7%AB%99/" />
-            <id>tsuhsin.netlify.com/posts/%E4%BD%BF%E7%94%A8hugo%E6%9E%B6%E8%A8%AD%E7%B6%B2%E7%AB%99/</id>
-            <updated>2020-09-30T22:34:05+08:00</updated>
+            <link rel="alternate" type="text/html" href="tsuhsin.netlify.com/posts/hugo/" />
+            <id>tsuhsin.netlify.com/posts/hugo/</id>
+            <updated>2020-10-07T15:33:41+08:00</updated>
             <published>2019-07-19T17:10:53+08:00</published>
             <author>
                     <name>tsuhsin</name>
@@ -96,128 +347,6 @@
                             
                             
                                 <category scheme="tsuhsin.netlify.com/tags/%E6%9E%B6%E7%AB%99/" term="架站" label="架站" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        <entry>
-            <title type="text">Syntax Highlighting</title>
-            <link rel="alternate" type="text/html" href="tsuhsin.netlify.com/posts/syntax-highlighting/" />
-            <id>tsuhsin.netlify.com/posts/syntax-highlighting/</id>
-            <updated>2020-09-29T18:34:40+08:00</updated>
-            <published>2019-03-17T11:11:16+08:00</published>
-            <author>
-                    <name>tsuhsin</name>
-                    <uri>https://tsuhsin.netlify.com</uri>
-                    <email>tsuhsin860509@gmail.com</email>
-                    </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
-    
-    <summary type="html"><![CDATA[Syntax Highlighting 測試 package main import ( &quot;fmt&quot; &quot;math/rand&quot; &quot;time&quot; ) type Moo struct { Cow int Sound string Tube chan bool } // A cow will moo until it is being milked func cow(num int, mootube chan Moo) { tube……]]></summary>
-            
-                <content type="html"><![CDATA[<p>Syntax Highlighting 測試</p>
-
-<pre><code>package main
-
-import (
-    &quot;fmt&quot;
-    &quot;math/rand&quot;
-    &quot;time&quot;
-)
-
-type Moo struct {
-    Cow   int
-    Sound string
-    Tube  chan bool
-}
-
-// A cow will moo until it is being milked
-func cow(num int, mootube chan Moo) {
-    tube := make(chan bool)
-    for {
-        select {
-        case mootube &lt;- Moo{num, &quot;moo&quot;, tube}:
-            fmt.Println(&quot;Cow number&quot;, num, &quot;mooed through the mootube&quot;)
-            &lt;-tube
-            fmt.Println(&quot;Cow number&quot;, num, &quot;is being milked and stops mooing&quot;)
-            mootube &lt;- Moo{num, &quot;mooh&quot;, nil}
-            fmt.Println(&quot;Cow number&quot;, num, &quot;moos one last time in relief&quot;)
-            return
-        default:
-            fmt.Println(&quot;Cow number&quot;, num, &quot;mooed through the mootube and was ignored&quot;)
-            time.Sleep(time.Duration(rand.Int31n(1000)) * time.Millisecond)
-        }
-    }
-}
-
-// The farmer wants to turn on all the milktubes to stop the mooing
-func farmer(numcows int, mootube chan Moo, farmertube chan string) {
-    fmt.Println(&quot;Farmer starts listening to the mootube&quot;)
-    for unrelievedCows := numcows; unrelievedCows &gt; 0; {
-        moo := &lt;-mootube
-        if moo.Sound == &quot;mooh&quot; {
-            fmt.Println(&quot;Farmer heard a moo of relief from cow number&quot;, moo.Cow)
-            unrelievedCows--
-        } else {
-            fmt.Println(&quot;Farmer heard a&quot;, moo.Sound, &quot;from cow number&quot;, moo.Cow)
-            time.Sleep(2e9)
-            fmt.Println(&quot;Farmer starts the milking machine on cow number&quot;, moo.Cow)
-            moo.Tube &lt;- true
-        }
-    }
-    fmt.Println(&quot;Farmer doesn't hear a single moo anymore. All done!&quot;)
-    farmertube &lt;- &quot;yey!&quot;
-}
-
-// The farm starts out with mooing cows that wants to be milked
-func runFarm(numcows int) {
-    farmertube := make(chan string)
-    mootube := make(chan Moo)
-    for cownum := 0; cownum &lt; numcows; cownum++ {
-        go cow(cownum, mootube)
-    }
-    go farmer(numcows, mootube, farmertube)
-    farmerSaid := &lt;-farmertube
-    if farmerSaid == &quot;yey!&quot; {
-        fmt.Println(&quot;All cows are happy.&quot;)
-    }
-}
-
-func main() {
-    runFarm(4)
-    fmt.Println(&quot;done&quot;)
-}
-</code></pre>
-]]></content>
-            
-            
-            
-                
-                
-                
-                    
-                    
-                    
-                        
-                            <category scheme="tsuhsin.netlify.com/posts/" term="posts" label="posts" />
-                        
-                    
-                
-            
-            
-            
-                
-                    
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="tsuhsin.netlify.com/tags/syntax-highlighting/" term="Syntax Highlighting" label="Syntax Highlighting" />
                             
                         
                     
